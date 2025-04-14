@@ -1,0 +1,98 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background gradient */
+.login-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #e0f7fa, #e0f2f1); /* Soft pastel gradient */
+}
+
+/* Login box with shadow and rounded corners */
+.login-box {
+    background-color: #ffffff;
+    padding: 4rem 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d1fae5; /* Light emerald tint border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect on box */
+.login-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Title styling */
+.login-title {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #065f46; /* emerald-800 */
+    text-shadow: 1px 1px 0 #d1fae5;
+}
+
+/* Form layout */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* Input fields with elegant styling */
+.login-input {
+    width: 100%;
+    max-width: 320px;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    border: 1.5px solid #10b981; /* emerald-500 */
+    border-radius: 9999px;
+    background-color: #f0fdf4; /* light emerald background */
+    color: #065f46;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Input focus effect */
+.login-input:focus {
+    background-color: #ffffff;
+    border-color: #059669; /* emerald-600 */
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.4);
+}
+
+/* Placeholder styling */
+.login-input::placeholder {
+    color: #9ca3af; /* gray-400 */
+    font-style: normal;
+}
+
+/* Button with gradient and shadow */
+.login-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 9999px;
+    background: linear-gradient(to right, #10b981, #059669);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3);
+}
+
+/* Button hover effect */
+.login-button:hover {
+    background: linear-gradient(to right, #059669, #047857); /* darker emerald tones */
+    box-shadow: 0 6px 15px rgba(6, 95, 70, 0.4);
+    transform: translateY(-2px);
+}
